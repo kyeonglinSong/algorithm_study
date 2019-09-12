@@ -1,5 +1,5 @@
 # algorithm study
-  
+그냥 공부한 알고리즘 코드 
   
   
 
