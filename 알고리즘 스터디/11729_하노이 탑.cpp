@@ -1,29 +1,35 @@
+// 11729 하노이 탑
+
 #include<iostream>
 #include <vector>
+#include <algorithm>
+#include <cstdio>   // cout 쓰면 시간초과 뜸^^..
 using namespace std;
 
 int N;
-vector<pair<int, int>> v;
+vector<pair<int, int>> h;
 
-void Hanoi(int num, int first, int second, int third)
+void hanoi(int num, int first, int second, int third)
 {
-	if (num == 1) // 맨 밑판 1 -> 3
-		v.push_back({ first, third });
+	if (num == 1)
+		h.push_back({ first, third });
 	else
 	{
-		Hanoi(num - 1, first, third, second);  // 맨 밑판 빼고 모두 1 -> 2
-		v.push_back({ first, third }); // 옮긴거 저장
-		Hanoi(num - 1, second, first, third); //남은것들 2 -> 3
+
+		hanoi(num - 1, first, third, second);
+		h.push_back({ first, third });
+		hanoi(num - 1, second, first, third);
 	}
 }
 
-int main(void)
-
+int main()
 {
 	cin >> N;
-	Hanoi(N, 1, 2, 3);
-	cout << v.size() << endl;
-	for (int i = 0; i < v.size(); i++)
-		cout << v[i].first << " " << v[i].second << endl;
+
+	hanoi(N, 1, 2, 3);
+
+	printf("%d\n", h.size());
+	for (int i = 0; i < h.size(); i++)
+		printf("%d %d\n", h[i].first, h[i].second);
 	return 0;
 }
