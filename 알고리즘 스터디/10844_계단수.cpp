@@ -1,9 +1,9 @@
 #include<iostream>
 #include <algorithm>
+#incluee <cstring>
 using namespace std;
 
 const int MOD = 1000000000;
-int n;
 int cache[10][101];
 
 int dp(int digit, int length)
@@ -19,6 +19,7 @@ int dp(int digit, int length)
 
 int main()
 {
+	int n;
 	cin >> n;
 	memset(cache, -1, sizeof(cache));
 	for (int i = 0; i < 10; i++)
