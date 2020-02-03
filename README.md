@@ -11,18 +11,18 @@
 |   ├── BOK
 |   └── books
 └── python
-  └── BOK
+    └── BOK
 ```
 
 
 
   
 ## 📚Problems
-### BOK
+### - BOK
 #### - C++
 #### - python
   
-### books
+### - books
 책 "알고리즘 문제해결 전략"  
 - 6장. 무식하게 풀기  
 - 7장. 분할 정복  
