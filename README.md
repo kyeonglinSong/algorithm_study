@@ -24,8 +24,8 @@
 - 해시(4/4)
 - 완전 탐색(2/4)
    
-서머코딩/윈터코딩(~2018) `whit python`
-2018 KAKAO BLIND RECRUITMENT `whit python`
+서머코딩/윈터코딩(~2018) `whit python`  
+2018 KAKAO BLIND RECRUITMENT `whit python`  
   
 ### - books
 책 "알고리즘 문제해결 전략" `with C++` 
